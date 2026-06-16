@@ -1,0 +1,40 @@
+# CodeDrift Configuration
+
+languages:
+  - python
+  - typescript
+  - javascript
+
+include_patterns:
+  - "**/*.py"
+  - "**/*.ts"
+  - "**/*.js"
+
+exclude_patterns:
+  - "**/node_modules/**"
+  - "**/.venv/**"
+  - "**/__pycache__/**"
+  - "**/dist/**"
+  - "**/.git/**"
+
+# Check JSDoc/docstring consistency
+check_jsdoc: true
+
+# Check OpenAPI specs
+check_openapi: true
+
+# Check README examples
+check_readme: true
+
+# Check TypeScript types
+check_types: true
+
+# Minimum severity to report (info, warning, error)
+severity_threshold: warning
+
+# AI-powered suggestions
+ai_enabled: false
+ai_provider: openai
+
+# Automatically fix drifts
+auto_fix: false
