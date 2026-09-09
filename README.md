@@ -48,7 +48,7 @@ python main.py health
 python main.py export --output drift-report.json
 ```
 
-## 📋 What Can CodeDrift Detect?
+##  What Can CodeDrift Detect?
 
 ### 1. **Docstring Inconsistencies**
 ```python
