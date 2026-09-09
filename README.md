@@ -6,17 +6,17 @@
 
 🔍 **CodeDrift** automatically detects and fixes divergences between your code and documentation, keeping everything perfectly synchronized.
 
-## ✨ Features
+##  Features
 
-- 🎯 **Automatic Detection** - Finds documentation drifts in seconds
-- 🔧 **Smart Fixes** - Suggests or automatically applies corrections
-- 📊 **Health Score** - Visual documentation quality metrics
-- 🚀 **CI/CD Ready** - GitHub Actions, pre-commit hooks, and more
-- 🧠 **AI-Powered** - LLM suggestions for contextual fixes
-- 🌐 **Multi-Language** - Python, TypeScript, JavaScript, and more
-- 📝 **OpenAPI Support** - Validates and syncs API specs
+ **Automatic Detection** - Finds documentation drifts in seconds
+ **Smart Fixes** - Suggests or automatically applies corrections
+ **Health Score** - Visual documentation quality metrics
+ **CI/CD Ready** - GitHub Actions, pre-commit hooks, and more
+**AI-Powered** - LLM suggestions for contextual fixes
+**Multi-Language** - Python, TypeScript, JavaScript, and more
+ **OpenAPI Support** - Validates and syncs API specs
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Installation
 
@@ -57,7 +57,7 @@ def get_user(user_id: int, include_profile: bool) -> dict:
     
     Args:
         user_id (int): User ID
-        # ❌ Missing 'include_profile' parameter!
+        #  Missing 'include_profile' parameter!
     """
 ```
 
@@ -68,7 +68,7 @@ def create_post(title: str, content: str, author_id: int) -> dict:
 
 # Documentation says:
 # def create_post(title: str, content: str) -> dict:
-# ❌ Missing 'author_id' parameter!
+# Missing 'author_id' parameter!
 ```
 
 ### 3. **Outdated README Examples**
@@ -77,17 +77,17 @@ def create_post(title: str, content: str, author_id: int) -> dict:
 User endpoint returns only `{ id, name, email }`
 # But the code actually returns:
 { id, name, email, profile, verified_at }
-# ❌ Documentation is outdated!
+# Documentation is outdated!
 ```
 
 ### 4. **Type Inconsistencies**
 ```python
 # Docstring says returns int
 # Code actually returns str
-# ❌ Mismatch detected!
+#  Mismatch detected!
 ```
 
-## 🎯 Use Cases
+##  Use Cases
 
 ### For Individual Developers
 ```bash
@@ -109,7 +109,7 @@ python main.py health
 # See documentation health trends over time
 ```
 
-## 📊 Example Output
+## Example Output
 
 ```
 Found 3 drift(s):
@@ -117,16 +117,16 @@ Found 3 drift(s):
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━┳═══════════════════════┳══════════════┳═════┓
 ┃ Type                    ┃ Severity  ┃ Title                 ┃ File         ┃ Line ┃
 ┡━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━╇═══════════════════════╇══════════════╇═════┩
-│ missing_docstring       │ ⚠️ warning │ Missing docstring     │ users.py     │ 45  │
-│ parameter_mismatch      │ ❌ error   │ Parameter mismatch    │ posts.py     │ 67  │
-│ readme_outdated         │ ⚠️ warning │ Example out of date   │ README.md    │ 120 │
+│ missing_docstring       │  warning │ Missing docstring     │ users.py     │ 45  │
+│ parameter_mismatch      │  error   │ Parameter mismatch    │ posts.py     │ 67  │
+│ readme_outdated         │  warning │ Example out of date   │ README.md    │ 120 │
 └─────────────────────────┴───────────┴───────────────────────┴──────────────┴─────┘
 
-📊 Health Score: 85/100
-📁 Files analyzed: 12
+Health Score: 85/100
+ Files analyzed: 12
 ```
 
-## ⚙️ Configuration
+##  Configuration
 
 Edit `.codedrift.yml` in your project root:
 
@@ -176,7 +176,7 @@ Add to `.pre-commit-config.yaml`:
       types: [python]
 ```
 
-## 🤝 Contributing
+##  Contributing
 
 We welcome contributions! Here's how:
 
@@ -189,7 +189,7 @@ We welcome contributions! Here's how:
 
 MIT License - see [LICENSE](LICENSE) file for details
 
-## 🌟 Roadmap
+##  Roadmap
 
 - [ ] VSCode Extension for inline drift detection
 - [ ] Web dashboard with drift trends
@@ -201,6 +201,6 @@ MIT License - see [LICENSE](LICENSE) file for details
 
 ---
 
-**Made with ❤️ by the CodeDrift Team**
+**Made with  by the CodeDrift Team**
 
 *Keep your code and documentation in perfect sync* ✨
