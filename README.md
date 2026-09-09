@@ -152,7 +152,7 @@ ai_enabled: true  # Optional: enable AI suggestions
 auto_fix: false   # Optional: auto-fix drifts
 ```
 
-## 🔧 CLI Commands
+##  CLI Commands
 
 | Command | Description |
 |---------|-------------|
@@ -162,7 +162,7 @@ auto_fix: false   # Optional: auto-fix drifts
 | `python main.py fix` | Automatically fix drifts |
 | `python main.py export` | Export drift report as JSON |
 
-## 📦 Pre-commit Hook
+##  Pre-commit Hook
 
 Add to `.pre-commit-config.yaml`:
 
